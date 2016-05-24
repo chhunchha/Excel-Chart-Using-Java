@@ -1,11 +1,11 @@
 # Excel-Chart-Using-Java
 
-Usecase : Insert data and prepare charts - pie, bar or other as per requirement.
-
+## Usecase : Insert data and prepare charts - pie, bar or other as per requirement.
 Apache POI allows only scatter and line chart as of now.
 
-Solution:
-- Created a template file which has macro as below. Macro run when worksheet activates and it changes chart type to required chart type based on value at cell Z1.
+## Solution:
+- Created a template file which has macro as below. Use this workbook and worksheet as base for creating new workbook/worksheet.
+- Macro run when worksheet activates and it changes chart type to required chart type based on value at cell Z1.
 
         Private Sub Workbook_SheetActivate(ByVal Sh As Object)
             On Error GoTo ErrHandler:
